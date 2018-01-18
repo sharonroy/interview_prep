@@ -1,1 +1,95 @@
 Python Notes: https://docs.python.org/3/reference/index.html
+
+Lexical Analysis: /reference/lexical-analysis.html
+	Reserved classes of Identifiers: 
+	--> __*__ system-defined name 
+	--> __* class-private name; avoid name clashes between private attributes of base and derived classes 
+
+	Formatted String Literals: 
+	--> Expressions evaluated at run time
+	--> Format specifier is the same as that used by string .format()
+	--> Replacement fields cannot be split across literals.
+
+	Numeric Literals: 
+	--> Integers, floating point numbers, and imaginary numbers. 
+	--> No signs, so -1 is actually an expression of the unary op and the literal. 
+
+Data Model: /reference/datamodel.html
+	Objects, values, and types: 
+	--> All data in a Python program is represented as an object or a relationship between objects. 
+	--> Every object has identity, type, and value.
+		--> Identity: [immutable] 
+			--> identity is the object's memory address.
+ 			--> 'is' op compares the identity of two objects.
+		--> Type:  [immutable]
+			--> determines what operations, values, and mutablity are supported. 
+				--> numbers, strings, and tuples are immutable
+				--> dictionaries and lists are mutable7
+		--> Value: [mutable or immutable]
+			--> Immutability is not strictly equivalent to having an unchangeable value. 
+				--> For example, an immutable object can be a reference to a mutable object. The value of the immutable will change if the mutable object it points to has its value changed. However, the reference will always be to the same mutable object.  
+	--> Garbage collection:
+		--> Objects are never explicitly destroyed. Garbage collector may eat up unreachable literals if implemented. The only stipulation for garbage collection implementations is that reachable objects are not collected. 
+		--> Do not depend on immediate finalization of objects when they become unreachable (so you should always close files explicitly).
+	--> Containers: 
+		--> Some objects contain references to other objects. Tuples, lists and dictionaries are all containers. 
+	Standard Type Hierarchy: 
+	--> None
+	--> NotImplemented
+	--> Ellipsis: often used in slicing
+	--> Number
+		--> Integral: represents elements from the mathematical set of integers
+			--> int
+			--> bool
+		--> Real: represents machine-level double precision floating point numbers
+		--> Complex: represents a pair of floating point numbers
+	--> Sequences: finite ordered set
+		--> Immutable: 
+			--> Strings: Python doesn’t have a char type; instead, every code point in the string is represented as a string object with length 1 
+			--> Tuples
+			--> Bytes: Immutable array 
+		--> Mutable: 
+			--> Lists
+			--> Byte Arrays: Mutable array and hence, unhashable 
+	--> Set types: finite unordered set of unique and immutable objects and hence cannot be indexed by any subscript
+		--> Sets: represents a mutable set
+		--> Frozen sets: represent an immutable set and hence, hashable. It can be used as an element of another set or as a dictionary key. 
+	--> Mappings: finite sets of objects indexed with an arbitary index set
+		--> Dictionaries: represents finite sets of objects indexed by nearly arbitrary values. The index/keys cannot be lists/dictionaries/other mutable types that are compared by value instead of id. Efficient implementations of dictionaries require that a key's hash value remain constant. 
+	--> Callable types: 
+		--> User Defined Functions: these have some attributes __*__
+		--> Instance methods: 
+Execution Model: 
+
+Import System: 
+
+Expressions: 
+
+Simple Statements: 
+
+Top-level Components: 
+
+Python Standard Library: 
+
+	Data Types: 
+
+	Functional Programming Modules: 
+
+	File and Directory Access: 
+
+	Data Persistence: 
+
+	Data Compression: 
+
+	File Formats: 
+
+	Cryptographic Services: 
+
+	Concurrent Execution: 
+
+	Interprocess Communication and Networking: 
+
+	Development Tools: 
+
+	Debugging and Profiling: 
+

@@ -1,0 +1,9 @@
+Python Questions: 
+
+--> If there's a variable 'a' and a = 8. Then, a = a + 2. When is the new literal created? At the + or the = op? Or is the VM stack based in which case, the new literal is '2' and then, that's added to 'a'. So at the end of evaluation of the expression, there are no new literals. 
+--> In a for loop, how many literals are created for the iteration variable? 
+--> a = 1 and b = 1 # may or may not point to the same literal
+c = [] and d = [] # point to two different empty lists
+c = d = [] # c and d point to the same empty list
+same case for a = b = 1?
+--> What's the difference between a singleton [single item tuple] and a variable? 
